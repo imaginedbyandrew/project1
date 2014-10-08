@@ -1,0 +1,13 @@
+<h3>This Page Shows Info About A Single TV Show</h3>
+
+<p><%= @tvshow.title %></p>
+<p><%= @tvshow.plot %></p>
+<p><%= @tvshow.network %></p>
+<p><%= @tvshow.country %></p>
+<p class="poster"><%= @tvshow.poster %></p>	
+<p><%= @tvshow.premiere_date %></p>
+
+<%= link_to("EDIT", edit_tvshow_path(@tvshow)) %>
+<%= link_to("DELETE", tvshow_path(@tvshow), :method => 'delete') %>
+
+

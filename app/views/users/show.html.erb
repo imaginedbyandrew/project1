@@ -1,0 +1,9 @@
+<h3>MY PROFILE</h3>
+
+<p><%= @user.name %></p>
+<p><%= @user.email %></p>
+<p><%= @user.password_digest %></p>
+<p><%= @user.avatar %></p>
+
+<%= link_to("EDIT", edit_tvshow_path(@tvshow)) %>
+<%= link_to("DELETE", tvshow_path(@tvshow)) %>

@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Binger</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+	<head>
+  	<title>Binger</title>
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+
+<div class="binger">BINGER</div>
+
+<div class="intellinav">
+<%== intellinav %>
+</div>
+
+<!-- Container for Navigation Bar on left of page -->
+<ul class="nav">
+	<p>
+	<i class="fa fa-home fa-3x"></i>
+	</p>
+	<p>
+	<%= link_to("MAIN MENU", tvshows_path) %>
+	</p>
+	<p>
+	<i class="fa fa-plus-square fa-3x"></i>
+	</p>
+	<p>
+	<%= link_to('ADD SHOW', new_tvshow_path) %>
+	</p>
+	<p>
+	<i class="fa fa-user fa-3x"></i>
+	</p>
+	<p>
+	<%= link_to('ADD USER', new_user_path) %>
+	
+	<%= yield %>
+</ul>
+
 <body>
 
-<%= yield %>
+
 
 </body>
 </html>

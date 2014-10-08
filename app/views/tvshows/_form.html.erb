@@ -1,0 +1,33 @@
+<%= form_for @tvshow do |f| %>
+	<p>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</p>
+
+	<p>
+		<%= f.label :plot %>
+		<%= f.text_field :plot %>
+	</p>
+
+	<p>
+		<%= f.label :network %>
+		<%= f.text_field :network %>
+	</p>
+
+	<p>
+		<%= f.label :country %>
+		<%= f.text_field :country %>
+	</p>
+
+	<p>
+		<%= f.label :poster %>
+		<%= f.text_field :poster %>
+	</p>
+
+	<p>
+		<%= f.label :premiere_date %>
+		<%= f.text_field :premiere_date %>
+	</p>
+	
+	<%= f.submit %>
+		<% end %>

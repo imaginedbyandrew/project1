@@ -7,6 +7,7 @@ class CreateTvshows < ActiveRecord::Migration
     	t.string :country
     	t.text :poster
     	t.date :premiere_date
+        t.string :user_id
     	t.timestamps
     end
   end
