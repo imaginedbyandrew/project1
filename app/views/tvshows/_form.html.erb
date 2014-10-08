@@ -1,32 +1,32 @@
 <%= form_for @tvshow do |f| %>
 	<p>
-		<%= f.label :title %>
-		<%= f.text_field :title %>
+		
+		<%= f.text_field :title, :placeholder => "Title" %>
 	</p>
 
 	<p>
-		<%= f.label :plot %>
-		<%= f.text_field :plot %>
+		
+		<%= f.text_field :plot, :placeholder => "Plot" %>
 	</p>
 
 	<p>
-		<%= f.label :network %>
-		<%= f.text_field :network %>
+		
+		<%= f.text_field :network, :placeholder => "Network" %>
 	</p>
 
 	<p>
-		<%= f.label :country %>
-		<%= f.text_field :country %>
+		
+		<%= f.text_field :country, :placeholder => "Country" %>
 	</p>
 
 	<p>
-		<%= f.label :poster %>
-		<%= f.text_field :poster %>
+		
+		<%= f.text_field :poster, :placeholder => "Poster URL" %>
 	</p>
 
 	<p>
-		<%= f.label :premiere_date %>
-		<%= f.text_field :premiere_date %>
+		
+		<%= f.text_field :premiere_date, :placeholder => "Premiere Date" %>
 	</p>
 	
 	<%= f.submit %>

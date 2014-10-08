@@ -8,37 +8,39 @@
   	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 
-<div class="binger">BINGER</div>
-
+<body>
 <div class="intellinav">
 <%== intellinav %>
 </div>
 
 <!-- Container for Navigation Bar on left of page -->
-<ul class="nav">
-	<p>
-	<i class="fa fa-home fa-3x"></i>
-	</p>
-	<p>
-	<%= link_to("MAIN MENU", tvshows_path) %>
-	</p>
-	<p>
-	<i class="fa fa-plus-square fa-3x"></i>
-	</p>
-	<p>
-	<%= link_to('ADD SHOW', new_tvshow_path) %>
-	</p>
-	<p>
-	<i class="fa fa-user fa-3x"></i>
-	</p>
-	<p>
-	<%= link_to('ADD USER', new_user_path) %>
-	
+<div class="nav">
+	<div class="binger">
+		<span>BINGER</span>
+	</div>
+	<div class="links">
+		<p>
+		<i class="fa fa-home fa-3x"></i>
+		</p>
+		<p>
+		<%= link_to("MAIN MENU", tvshows_path) %>
+		</p>
+		<p>
+		<i class="fa fa-plus-square fa-3x"></i>
+		</p>
+		<p>
+		<%= link_to('ADD SHOW', new_tvshow_path) %>
+		</p>
+		<p>
+		<i class="fa fa-user fa-3x"></i>
+		</p>
+		<p>
+		<%= link_to('ADD USER', new_user_path) %>
+		</div>
+</div>
+
+
 	<%= yield %>
-</ul>
-
-<body>
-
 
 
 </body>

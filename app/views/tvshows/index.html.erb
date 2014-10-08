@@ -1,13 +1,11 @@
 
 <div class="database">
-<h3>TV SHOWS ALREADY IN OUR DATABASE</H3>
-
 <% @tvshows.each do |tvshow| %>
   <ul>
-    <li><%= image_tag(tvshow.poster, :class => 'thumbnail') %></li>
-    <li><%= link_to(tvshow.title, tvshow) %></li>
-    <li>Premiere Date: <%= tvshow.premiere_date.strftime('%A %B %d %Y') if tvshow.premiere_date %></li>
-    <li>Plot: <%= tvshow.plot %></li>
+    <p><%= image_tag(tvshow.poster, :class => 'thumbnail') %></p>
+    <p><%= link_to(tvshow.title, tvshow) %></p>
+    <p>Premiere Date: <%= tvshow.premiere_date.strftime('%A %B %d %Y') if tvshow.premiere_date %></p>
+    <p>Plot: <%= tvshow.plot %></p>
   </ul>
 <% end %>
 <div>

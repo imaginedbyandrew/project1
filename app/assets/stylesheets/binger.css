@@ -1,41 +1,59 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Ultra);
 
 body {
 	background-color: #444444;
+	/*background-image: url(app/assets/images/"concrete_wall-11668")*/
+	width: 100%;
+	height: 100%;
+}
+
+.signup {
+	background-color: white;
+	padding: 10px;
+	margin: 5px;
+	font-size: 11px;
 }
 
 .intellinav {
 	height: 20px;
 	width: 300px;
-	margin-right: 0px;
-	margin-left: 1000px;
-	background-color: #ffcc00;
+	/*background-color: #ffcc00;*/
 	padding: 5px;
 	font-family: Helvetica;
 	color: #444444;
+	position: absolute;
+	top: 5px;
+	right: -151px;
 
 }
 
-ul.nav {      
-list-style-type: none;
-padding: 5px;      
-margin-left: 0; 
-width: 70px;
-height: 800px; 
-display:inline-block;
-position:relative;
-top: -107px;
-font-family: Helvetica;
-font-size: 9px;
-text-align: center;
+.links {
+
+}
+
+div.nav {      
+	list-style-type: none;
+	margin-left: 0; 
+	width: 70px;
+	height: 800px; 
+	display:inline-block;
+	position:relative;
+	font-family: Helvetica;
+	font-size: 9px;
+	text-align: center;
+	background-color: white;
+	max-height: 630px;
+	color: white;
+	width: 70px;
 } 
 
-ul.nav a { 
+div.nav a { 
 text-decoration: none; 
 color: #d4d4d4;
 }
 
-ul.nav i {
+div.nav i {
 	color: #d4d4d4;
 }
 
@@ -44,26 +62,68 @@ ul.nav i {
 	max-height: 300px;
 }
 
-.nav {
-	background-color: white;
-	height: 100px;
-	color: white;
-	margin-top: 70px;
-	width: 70px;
-}
 
 .binger {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Ultra', serif;
 	color: white;
-	height: 70px;
-	max-width: 70px;
-	background-color: #ffcc00;
+	width: 70px;
+	background-color: #ffcc00;	
+}
+
+.binger span {
+display: inline-block;
+transform: rotate(-90deg);
+transform-origin: center;
+line-height: 3.7em;
+font-size: 27px;
+letter-spacing: 5px;
+margin: 0 -10px 0 0;
+text-align: center;
+height: 186px;
 }
 
 .database {
-	width: 400px;
+	width: 500px;
 	height: 400px;
-	margin-left: 200px;
+	margin-left: 100px;
+	margin-top: -588px;
 	text-align: left;
+	/*display: inline-block;*/
+	font-family: Helvetica;
+	font-size: 10px;
 }
+
+.user_password {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	width: 100px;
+	font-family: Helvetica;
+	font-size: 10px;
+}
+
+.new_user_form {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	width: 100px;
+	font-family: Helvetica;
+	font-size: 10px;
+}
+
+.new_show_form {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	top: 250px;
+	width: 100px;
+	font-family: Helvetica;
+	font-size: 12px;
+}
+
+.edit_delete_buttons {
+	
+}
+
+
 

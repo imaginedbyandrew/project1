@@ -23,8 +23,9 @@ module ApplicationHelper
       nav += link_to('Edit profile', edit_user_path(@current_user))
       nav += "#{ link_to('Sign out', login_path, :method => :delete, :data => {:confirm => 'Are you sure?'}) }"
     else
-      nav += "#{ link_to('Sign up', new_user_path) }"
-      nav += "#{ link_to('Sign in', login_path) }"
+      nav += "#{ link_to('Sign up', new_user_path,:class => "signup") }"
+      nav += "#{ link_to('Sign in', login_path,:class => "signup") }"
+      
     end
     nav
   end
