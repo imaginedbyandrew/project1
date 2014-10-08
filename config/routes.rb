@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'tvshows#index'
+  root :to => 'pages#home'
   resources :tvshows, :users
 
   get '/login' => 'session#new'

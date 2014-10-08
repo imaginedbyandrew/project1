@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
 @import url(http://fonts.googleapis.com/css?family=Ultra);
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
 
 body {
 	background-color: #444444;
@@ -124,6 +125,14 @@ height: 186px;
 
 .edit_delete_buttons {
 
+}
+
+.welcome_message {
+	font-family: 'Bitter', serif;
+	color: white;
+	margin-left: 355px;
+	display: inline-block;
+	font-size: 52px;
 }
 
 
