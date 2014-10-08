@@ -17,6 +17,13 @@ body {
 	font-size: 11px;
 }
 
+.signedin {
+	background-color: white;
+	padding: 10px;
+	margin: 5px;
+	font-size: 11px;
+}
+
 .intellinav {
 	height: 20px;
 	width: 300px;
@@ -55,9 +62,14 @@ text-decoration: none;
 color: #d4d4d4;
 }
 
-div.nav i {
+div.nav i a {
 	color: #d4d4d4;
 }
+
+div.nav a:hover, div.nav a:hover i { 
+    color: #ffcc00;
+}
+
 
 .thumbnail {
 	max-width: 300px;
@@ -66,7 +78,8 @@ div.nav i {
 
 
 .binger {
-	font-family: 'Ultra', serif;
+	/*font-family: 'Ultra', serif;*/
+	font-family: 'Bitter', serif;
 	color: white;
 	width: 70px;
 	background-color: #ffcc00;	
@@ -86,13 +99,14 @@ height: 186px;
 
 .database {
 	width: 500px;
-	height: 400px;
+	height: auto;
 	margin-left: 100px;
 	margin-top: -588px;
 	text-align: left;
 	/*display: inline-block;*/
 	font-family: Helvetica;
-	font-size: 10px;
+	font-size: 12px;
+	color: white;
 }
 
 .user_password {
@@ -121,10 +135,19 @@ height: 186px;
 	width: 100px;
 	font-family: Helvetica;
 	font-size: 12px;
+	margin-bottom: 50px;
+	color: white;
 }
 
 .edit_delete_buttons {
+	background-color: white;
+	padding: 5px;
+	margin: 2px;
+	font-size: 11px;
+}
 
+.edit_delete_buttons :hover {
+	background-color: #ffcc00;
 }
 
 .welcome_message {
@@ -134,6 +157,19 @@ height: 186px;
 	display: inline-block;
 	font-size: 52px;
 }
+
+.edit_form {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	top: 250px;
+	width: 100px;
+	font-family: Helvetica;
+	font-size: 12px;
+	margin-bottom: 50px;
+	color: white;
+}
+
 
 
 

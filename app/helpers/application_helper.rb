@@ -19,9 +19,9 @@ module ApplicationHelper
     nav = ''
     if @current_user.present?
       nav += "<p> Welcome to Binger, #{ @current_user.name }! </p>"
-      nav += link_to('All users', users_path,:class => "signup") 
-      nav += link_to('Edit profile', edit_user_path(@current_user),:class => "signup")
-      nav += "#{ link_to('Sign out', login_path, :method => :delete, :data => {:confirm => 'Are you sure?'},:class => "signup") }"
+      nav += link_to('All users', users_path,:class => "signedin") 
+      nav += link_to('Edit profile', edit_user_path(@current_user),:class => "signedin")
+      nav += "#{ link_to('Sign out', login_path, :method => :delete, :data => {:confirm => 'Are you sure?'},:class => "signedin") }"
     else
       nav += "#{ link_to('Sign up', new_user_path,:class => "signup") }"
       nav += "#{ link_to('Sign in', login_path,:class => "signup") }"

@@ -19,29 +19,21 @@
 		<span>BINGER</span>
 	</div>
 	<div class="links">
+		
 		<p>
-		<i class="fa fa-home fa-3x"></i>
+			<a href="<%= root_path %>"><i class="fa fa-home fa-3x"></i><br><br>MAIN MENU</a>
 		</p>
+		
 		<p>
-		<%= link_to("MAIN MENU", root_path) %>
+			<a href="<%= new_tvshow_path %>"><i class="fa fa-plus-square fa-3x"></i><br><br>ADD SHOW</a>
 		</p>
+		
 		<p>
-		<i class="fa fa-plus-square fa-3x"></i>
-		</p>
-		<p>
-		<%= link_to('ADD SHOW', new_tvshow_path) %>
-		</p>
-		<p>
-		<i class="fa fa-user fa-3x"></i>
-		</p>
-		<p>
-		<%= link_to('ADD USER', new_user_path) %>
+			<a href="<%= new_user_path %>"><i class="fa fa-caret-square-o-right fa-3x"></i><br><br>ADD USER</a>
 	  </p>
+
 	  <p>
-	  <i class="fa fa-caret-square-o-right fa-3x"></i>
-		</p>
-		<p>
-	  <%= link_to('SHOWS', tvshows_path) %>
+	  	<a href="<%= tvshows_path %>"><i class="fa fa-caret-square-o-right fa-3x"></i><br><br>SHOWS</a>
 		</p>
 
 		</div>

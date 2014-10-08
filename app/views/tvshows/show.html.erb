@@ -7,7 +7,7 @@
 <p class="poster"><%= @tvshow.poster %></p>	
 <p><%= @tvshow.premiere_date %></p>
 
-<%= link_to("EDIT", edit_tvshow_path(@tvshow),:class => "edit_delete_buttons") %>
-<%= link_to("DELETE", tvshow_path(@tvshow), :method => 'delete',:class => "edit_delete_buttons") %>
+<%= link_to("Edit", edit_tvshow_path(@tvshow),:class => "edit_delete_buttons") %>
+<%= link_to("Delete", tvshow_path(@tvshow), :method => 'delete',:class => "edit_delete_buttons") %>
 
 </div>
