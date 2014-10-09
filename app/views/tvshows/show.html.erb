@@ -1,11 +1,11 @@
 <div class="new_show_form">
 
 <p><%= image_tag @tvshow.poster, :class => "poster"%></p>	
-<p><%= @tvshow.title %></p>
-<p><%= @tvshow.plot %></p>
-<p><%= @tvshow.network %></p>
-<p><%= @tvshow.country %></p>
-<p><%= @tvshow.premiere_date %></p>
+<p class ="tvshow_title"><%= @tvshow.title %></p>
+<p class ="tvshow_info"><%= @tvshow.plot %></p>
+<p class ="tvshow_info"><%= @tvshow.network %></p>
+<p class ="tvshow_info"><%= @tvshow.country %></p>
+<p class ="tvshow_info"><%= @tvshow.premiere_date %></p>
 
 <%= link_to("Edit", edit_tvshow_path(@tvshow),:class => "edit_delete_buttons") %>
 <%= link_to("Delete", tvshow_path(@tvshow), :method => 'delete',:class => "edit_delete_buttons") %>
