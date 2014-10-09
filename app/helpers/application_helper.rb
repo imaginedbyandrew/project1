@@ -18,8 +18,8 @@ module ApplicationHelper
   def intellinav
     nav = ''
     if @current_user.present?
-      nav += "<p> Welcome to Binger, #{ @current_user.name }! </p>"
-      nav += link_to('All users', users_path,:class => "signedin") 
+      nav += "<p> Welcome, #{ @current_user.name }! </p>"
+       
       nav += link_to('Edit profile', edit_user_path(@current_user),:class => "signedin")
       nav += "#{ link_to('Sign out', login_path, :method => :delete, :data => {:confirm => 'Are you sure?'},:class => "signedin") }"
     else

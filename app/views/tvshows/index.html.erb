@@ -2,10 +2,9 @@
 <div class="database">
 <% @tvshows.each do |tvshow| %>
   <ul>
-    <p><%= image_tag(tvshow.poster, :class => 'thumbnail') %></p>
-    <p><%= link_to(tvshow.title, tvshow) %></p>
-    <p>Premiere Date: <%= tvshow.premiere_date.strftime('%A %B %d %Y') if tvshow.premiere_date %></p>
-    <p>Plot: <%= tvshow.plot %></p>
+    
+    <p><%= link_to(image_tag(tvshow.poster, :class => 'thumbnail'), tvshow) %></p>
+    
   </ul>
 <% end %>
 <div>

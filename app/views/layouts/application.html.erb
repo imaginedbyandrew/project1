@@ -27,15 +27,19 @@
 		<p>
 			<a href="<%= new_tvshow_path %>"><i class="fa fa-plus-square fa-3x"></i><br><br>ADD SHOW</a>
 		</p>
-		
+		<% if @current_user.nil? %>
 		<p>
-			<a href="<%= new_user_path %>"><i class="fa fa-caret-square-o-right fa-3x"></i><br><br>ADD USER</a>
+			<a href="<%= new_user_path %>"><i class="fa fa-user fa-3x"></i><br><br>ADD USER</a>
 	  </p>
-
+		<% end %>
 	  <p>
-	  	<a href="<%= tvshows_path %>"><i class="fa fa-caret-square-o-right fa-3x"></i><br><br>SHOWS</a>
+	  	<a href="<%= tvshows_path %>"><i class="fa fa-caret-square-o-right fa-3x"></i><br><br>ALL SHOWS</a>
 		</p>
-
+		<% if @current_user.present? %>
+		<p>
+			<a href="<%= user_path(@current_user) %>"><i class="fa fa-star fa-3x"></i><br><br>MY SHOWS</a>
+		</p>
+		<% end %>
 		</div>
 </div>
 

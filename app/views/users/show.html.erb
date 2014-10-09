@@ -1,9 +1,18 @@
+<div class="new_show_form">
+
 <h3>MY PROFILE</h3>
 
 <p><%= @user.name %></p>
 <p><%= @user.email %></p>
-<p><%= @user.password_digest %></p>
+
 <p><%= @user.avatar %></p>
 
-<%= link_to("EDIT", edit_tvshow_path(@tvshow)) %>
-<%= link_to("DELETE", tvshow_path(@tvshow)) %>
+<h3>MY SHOWS</h3>
+
+<p>
+	<% @user.tvshows.each do |tvshow| %>
+		<%= link_to(image_tag(tvshow.poster, :class => 'thumbnail'), tvshow) %>
+	<% end %>
+</p>
+
+</div>

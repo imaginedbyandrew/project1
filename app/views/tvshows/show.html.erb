@@ -1,13 +1,14 @@
 <div class="new_show_form">
 
+<p><%= image_tag @tvshow.poster, :class => "poster"%></p>	
 <p><%= @tvshow.title %></p>
 <p><%= @tvshow.plot %></p>
 <p><%= @tvshow.network %></p>
 <p><%= @tvshow.country %></p>
-<p class="poster"><%= @tvshow.poster %></p>	
 <p><%= @tvshow.premiere_date %></p>
 
 <%= link_to("Edit", edit_tvshow_path(@tvshow),:class => "edit_delete_buttons") %>
 <%= link_to("Delete", tvshow_path(@tvshow), :method => 'delete',:class => "edit_delete_buttons") %>
+<%= link_to("Like", like_tvshows_path(@tvshow),:method => 'post', :class => "edit_delete_buttons") %>
 
 </div>

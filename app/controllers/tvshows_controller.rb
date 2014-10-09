@@ -5,12 +5,21 @@ class TvshowsController < ApplicationController
 	end
 
 	def new
+		redirect_to login_path unless @current_user
 		@tvshow = Tvshow.new
 	end
 
 	def create
+		binding.pry
 		@tvshow = Tvshow.create tvshow_params
+		@current_user.tvshows << @tvshow
 		redirect_to tvshows_path
+	end
+
+	def like
+		@tvshow = Tvshow.find params[:id]
+		@current_user.tvshows << @tvshow
+		redirect_to user_path(@current_user)
 	end
 
 	def show
