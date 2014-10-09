@@ -10,7 +10,6 @@ class TvshowsController < ApplicationController
 	end
 
 	def create
-		binding.pry
 		@tvshow = Tvshow.create tvshow_params
 		@current_user.tvshows << @tvshow
 		redirect_to tvshows_path

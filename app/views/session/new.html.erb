@@ -1,5 +1,9 @@
 <div class="user_password">
 
+	<% if @errors %>
+		<p class="error"><%= @errors %></p>
+	<% end %>
+
 <%= form_tag '/login' do %>
  
   <%= text_field_tag :username, nil, :autofocus => true, :placeholder => "Username" %>

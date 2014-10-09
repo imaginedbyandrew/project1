@@ -10,7 +10,10 @@ class SessionController < ApplicationController
       session[:user_id] = @current_user.id
       redirect_to root_path
     else
-      redirect_to login_path
+      @errors = 'Invalid username or password'
+      render :new
+      # redirect_to login_path
+    # nav += "#{link_to('Sign In', login_path, :data => {:confirm => 'Are you sure?'})}"
     end
   end
 

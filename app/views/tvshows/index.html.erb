@@ -1,10 +1,8 @@
 
-<div class="database">
+<div class="shows">
 <% @tvshows.each do |tvshow| %>
-  <ul>
     
-    <p><%= link_to(image_tag(tvshow.poster, :class => 'thumbnail'), tvshow) %></p>
+    <%= link_to(image_tag(tvshow.poster, :class => 'thumbnail'), tvshow) %>
     
-  </ul>
 <% end %>
 <div>

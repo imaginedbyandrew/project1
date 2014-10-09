@@ -1,18 +1,19 @@
-<div class="new_show_form">
+<div class="new_show_form fixthis">
 
-<h3>MY PROFILE</h3>
+	<h3>MY PROFILE</h3>
 
-<p><%= @user.name %></p>
-<p><%= @user.email %></p>
+	<p><%= @user.name %></p>
+	<p><%= @user.email %></p>
 
-<p><%= @user.avatar %></p>
+	<p><%= @user.avatar %></p>
+
+</div>
 
 <h3>MY SHOWS</h3>
 
-<p>
+<div class="shows">
 	<% @user.tvshows.each do |tvshow| %>
 		<%= link_to(image_tag(tvshow.poster, :class => 'thumbnail'), tvshow) %>
 	<% end %>
-</p>
-
 </div>
+
